@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اخوان فتوح</title>
+    <link rel="stylesheet" href="loay.css/all.min.css" />
+    <link rel="stylesheet" href="loay.css/main.css" />
+    <link rel="stylesheet" href="loay.css/normalize.css" />
+    <style>
+      /* صفحة هبوط بسيطة */
+      :root {
+        --accent: #c0392b;
+        --wa: #25d366;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Arial;
+        background: #000;
+      }
+      .hero {
+        height: 100vh;
+        background-image: url("images/h1.jpg"); /* استبدل هذا بالمسار الفعلي */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      }
+      /* تغطية داكنة فوق الصورة */
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)
+        );
+        z-index: 1;
+      }
+      .hero-inner {
+        position: relative;
+        z-index: 2;
+        max-width: 1000px;
+        padding: 20px;
+      }
+      .logo {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .tag {
+        opacity: 0.95;
+        margin-bottom: 18px;
+      }
+      .cta {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      }
+      .btn:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+      }
+      .btn-wa {
+        background: var(--wa);
+      }
+      .btn-menu {
+        background: var(--accent);
+      }
+      /* زر صغير عند أسفل الصفحة للتمرير للمنيو إن وُجد */
+      .scroll-hint {
+        margin-top: 18px;
+        color: #f1f1f1;
+        opacity: 0.9;
+        font-size: 14px;
+      }
+      @media (max-width: 520px) {
+        .logo {
+          font-size: 22px;
+        }
+        .btn {
+          padding: 10px 14px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" role="banner" aria-label="صفحة هبوط المطعم">
+      <div class="hero-inner">
+        <div class="logo">اخوان فتوح</div>
+        <i class="fa-solid fa-pizza-slice" style="color: #ffa700c9"></i>
+        <div class="tag">تحب تاكل ايه النهاردة؟؟</div>
+        <div class="cta">
+          <a
+            class="btn btn-wa"
+            href="https://wa.me/201555172765?text=السلام%20عليكم%20أريد%20الطلب"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>واتساب</span>
+            <i class="fa-brands fa-whatsapp" style="font-size: larger"></i>
+          </a>
+
+          <!-- هذا الزر يذهب لصفحة المنيو (menu.html) — غيّر الاسم إذا تريد صفحة مختلفة -->
+          <a class="btn btn-menu" href="index1.html">
+            <span>عرض المنيو</span>
+          </a>
+        </div>
+
+        <div
+          class="scroll-hint"
+          style="
+            font-size: larger;
+            font-size: larger;
+            color: #e56d47;
+            background-color: #0000008c;
+            border-radius: 50%;
+          "
+        >
+          فطير وبيتزا.. الطعم اللي هيخليك ترجع تاني
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu</title>
+    <link rel="stylesheet" href="loay.css/all.min.css" />
+    <link rel="stylesheet" href="loay.css/main.css" />
+    <link rel="stylesheet" href="loay.css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="تنقّل الأقسام">
+        <div class="brand"><strong> اخوان فتوح</strong></div>
+        <div class="links" role="navigation">
+          <!-- روابط تؤدي للأقسام -->
+          <a href="#fataer-sharqiya">فطائر شرقية</a>
+          <a href="#fataer-italiya">فطائر إيطالية</a>
+          <a href="#drinks">مشروبات</a>
+          <a href="#crepes">كريبات </a>
+          <a href="#desserts">سندوتشات </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- ملاحظة: ضع الصور داخل مجلد "images" وفولدر لكل قسم بالاسم التالي -->
+      <!-- images/fataer-sharqiya/   images/fataer-italiya/   images/drinks/   images/crepes/   images/desserts/ -->
+
+      <section id="fataer-sharqiya" aria-labelledby="h-fataer-sharqiya">
+        <h2 id="h-fataer-sharqiya">فطائر شرقية</h2>
+        <div class="gallery">
+          <!-- استبدل / add ملفات الصور داخل images/fataer-sharqiya/ -->
+          <article class="card">
+            <img src="images/فطائر/فراخ.jpg" alt="فطيرة فراخ" />
+            <div class="meta">
+              <div>فطيرة فراخ</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f1"
+              data-name="فطيرة فراخ"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/جبن خضار.jpg" alt="فطيرة جبنة" />
+            <div class="meta">
+              <div>فطيرة جبنة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f2"
+              data-name="فطيرة جبنة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/بسطرمة.jpg" alt="فطيرة بسطرمة" />
+            <div class="meta">
+              <div>فطيرة بسطرمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f3"
+              data-name="فطيرة بسطرمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/خضراوات.jpg" alt="فطيرة خضراوات" />
+            <div class="meta">
+              <div>فطيرة خضراوات</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f4"
+              data-name="فطيرة خضراوات"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/تونة.jpg" alt="فطيرة تونة" />
+            <div class="meta">
+              <div>فطيرة تونة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f5"
+              data-name="فطيرة تونة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/سجق.jpg" alt="فطيرة سجق" />
+            <div class="meta">
+              <div>فطيرة سجق</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f6"
+              data-name="فطيرة سجق"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/سي فوود.jpg" alt="فطيرة سي فوود" />
+            <div class="meta">
+              <div>فطيرة سي فوود</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f7"
+              data-name="فطيرة سي فوود"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/شوكلاته.jpg" alt="فطيرة شوكلاتة" />
+            <div class="meta">
+              <div>فطيرة شوكلاتة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f8"
+              data-name="فطيرة شوكلاتة "
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/كريمة مكسرات.jpg" alt="فطيرة كريمة مكسرات" />
+            <div class="meta">
+              <div>فطيرة كريمة مكسرات</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f9"
+              data-name="فطيرة كريمة مكسرات"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/فطائر/لحمة.jpg" alt="فطيرة لحمة" />
+            <div class="meta">
+              <div>فطيرة لحمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="f10"
+              data-name="فطيرة لحمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+        </div>
+        <a class="backtop" href="#top">الرجوع للأعلى ↑</a>
+      </section>
+
+      <section
+        id="fataer-italiya"
+        aria-labelledby="h-fataer-italiya"
+        style="margin-top: 28px"
+      >
+        <h2 id="h-fataer-italiya">فطائر إيطالية</h2>
+        <div class="gallery">
+          <article class="card">
+            <img src="images/بيتزا/جبن.jpg" alt="بيتزا مارجريتا" />
+            <div class="meta">
+              <div>بيتزا مارجريتا</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa1"
+              data-name="بيتزا مارجريتا"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/سجق.jpg" alt="فطيرة سجق" />
+            <div class="meta">
+              <div>بيتزا سجق</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa2"
+              data-name="بيتزا سجق"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/استربس.jpg" alt="فطيرة استربس" />
+            <div class="meta">
+              <div>بيتزا تشكن رانش</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa3"
+              data-name="بيتزا تشكن رانش"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/بسطرمة.jpg" alt="فطيرة بسطرمة" />
+            <div class="meta">
+              <div>بيتزا بسطرمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa4"
+              data-name="بيتزا بسطرمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/تونة.jpg" alt="فطيرة تونة" />
+            <div class="meta">
+              <div>بيتزا تونة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa5"
+              data-name="بيتزا تونة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/جمبري.jpg" alt="فطيرة جمبري" />
+            <div class="meta">
+              <div>بيتزا جمبري</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa6"
+              data-name="بيتزا جمبري"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/خضراوات.jpg" alt="فطيرة خضراوات" />
+            <div class="meta">
+              <div>بيتزا خضراوات</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa7"
+              data-name="بيتزا خضراوات"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/شيش.jpg" alt="فطيرة فراخ" />
+            <div class="meta">
+              <div>بيتزا فراخ</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa8"
+              data-name="بيتزا فراخ"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/كرسبي.jpg" alt="فطيرة كرسبي" />
+            <div class="meta">
+              <div>بيتزا كرسبي</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa9"
+              data-name="بيتزا كرسبي"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/بيتزا/لحمة.jpg" alt="فطيرة لحمة" />
+            <div class="meta">
+              <div>بيتزا لحمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fa10"
+              data-name="بيتزا لحمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+        </div>
+        <a class="backtop" href="#top">الرجوع للأعلى ↑</a>
+      </section>
+
+      <section id="drinks" aria-labelledby="h-drinks" style="margin-top: 28px">
+        <h2 id="h-drinks">مشروبات باردة وساخنة</h2>
+        <div class="gallery">
+          <article class="card">
+            <img src="images/مشروبات/قهوة.jpg" alt="قهوة عربية" />
+            <div class="meta">
+              <div>قهوة عربية</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb1"
+              data-name="قهوة عربية"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/شاي.jpg" alt="شاي " />
+            <div class="meta">
+              <div>شاي</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb2"
+              data-name="شاي"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/ايس شوكلت.jpg" alt="شاي " />
+            <div class="meta">
+              <div>ايس شوكلت</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb3"
+              data-name="ايس شوكلت"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/برتقال.jpg" alt="شاي " />
+            <div class="meta">
+              <div>برتقال</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb4"
+              data-name="برتقال"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/بوريو.jpg" alt="شاي " />
+            <div class="meta">
+              <div>بوريو</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb5"
+              data-name="بوريو"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/جوافة.jpg" alt="شاي " />
+            <div class="meta">
+              <div>جوافة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb6"
+              data-name="جوافة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/فراولة.jpg" alt="شاي " />
+            <div class="meta">
+              <div>فراولة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb7"
+              data-name="فراولة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/لمون.jpg" alt="شاي " />
+            <div class="meta">
+              <div>لمون</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb8"
+              data-name="لمون "
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/مانجا.jpg" alt="شاي " />
+            <div class="meta">
+              <div>مانجا</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb9"
+              data-name="مانجا "
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/مشروبات/موز باللبن.jpg" alt="شاي " />
+            <div class="meta">
+              <div>موز باللبن</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fb10"
+              data-name="موز باللبن "
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+        </div>
+        <a class="backtop" href="#top">الرجوع للأعلى ↑</a>
+      </section>
+
+      <section id="crepes" aria-labelledby="h-crepes" style="margin-top: 28px">
+        <h2 id="h-crepes">كريبات</h2>
+        <div class="gallery">
+          <article class="card">
+            <img src="images/كريبات/استربس.jpg" alt="كريب استربس " />
+            <div class="meta">
+              <div>كريب استربس</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc1"
+              data-name="كريب استربس"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/جمبري.jpg" alt="كريب جمبري " />
+            <div class="meta">
+              <div>كريب جمبري</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc2"
+              data-name="كريب جمبري"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/حلو.jpg" alt=" كريب فواكة" />
+            <div class="meta">
+              <div>كريب فواكة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc3"
+              data-name="كريب فواكة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/سجق.jpg" alt=" كريب سجق" />
+            <div class="meta">
+              <div>كريب سجق</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc4"
+              data-name="كريب سجق"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/شاورما.jpg" alt=" كريب شاورما" />
+            <div class="meta">
+              <div>كريب شاورما</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc5"
+              data-name="كريب شاورما"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/شوكلاتة.jpg" alt=" كريب شوكلاتة" />
+            <div class="meta">
+              <div>كريب شوكلاتة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc6"
+              data-name="كريب شوكلاتة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/شيش.jpg" alt=" كريب سيش طاووق" />
+            <div class="meta">
+              <div>كريب شيش طاووق</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc7"
+              data-name="كريب شيش طاووق"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/فراخ.jpg" alt=" كريب فراخ" />
+            <div class="meta">
+              <div>كريب فراخ</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc8"
+              data-name="كريب فراخ"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/فواكة.jpg" alt=" كريب فراولة" />
+            <div class="meta">
+              <div>كريب فراولة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc9"
+              data-name="كريب فراولة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/كريبات/لحمة.jpg" alt=" كريب لحمة" />
+            <div class="meta">
+              <div>كريب لحمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fc10"
+              data-name="كريب لحمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+        </div>
+        <a class="backtop" href="#top">الرجوع للأعلى ↑</a>
+      </section>
+
+      <section
+        id="desserts"
+        aria-labelledby="h-desserts"
+        style="margin-top: 28px; margin-bottom: 40px"
+      >
+        <h2 id="h-desserts">سندوتشات</h2>
+        <div class="gallery">
+          <article class="card">
+            <img src="images/سندوتشات/استربس.jpg" alt="بقلاوة" />
+            <div class="meta">
+              <div>ساندوتش استربس</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd1"
+              data-name="ساندوتش استربس"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/برجر.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش برجر</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd2"
+              data-name="ساندوتش برجر"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/بطاطس.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش بطاطس</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd3"
+              data-name="ساندوتش بطاطس"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/جمبري.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش جمبري</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd4"
+              data-name="ساندوتش جمبري"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/شاورما.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش شاورما</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd5"
+              data-name="ساندوتش شاورما"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/شيش.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش شيش طاووق</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd6"
+              data-name="ساندوتش شيش طاووق"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/كرسبي.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش كرسبي</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd7"
+              data-name="ساندوتش كرسبي"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/كفتة.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش كفتة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd8"
+              data-name="ساندوتش كفتة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/كوردن بلو.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش كوردن بلو</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd9"
+              data-name="ساندوتش كوردن بلو"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+          <article class="card">
+            <img src="images/سندوتشات/لحمة.jpg" alt="مقبلات" />
+            <div class="meta">
+              <div>ساندوتش لحمة</div>
+              <div class="price">100</div>
+            </div>
+            <button
+              class="add-to-cart"
+              data-id="fd10"
+              data-name="ساندوتش لحمة"
+              data-price="100"
+            >
+              add
+            </button>
+          </article>
+        </div>
+        <a class="backtop" href="#top">الرجوع للأعلى ↑</a>
+      </section>
+    </main>
+
+    <script>
+      // تمرير ناعم للروابط داخل الصفحة
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const target = document.querySelector(a.getAttribute("href"));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+
+    <aside id="cart">
+      <h3 style="margin: 0 0 8px 0">عربة الطلب</h3>
+      <div id="cart-items"></div>
+      <div class="dataOfUser">
+        يرجى إدخال موقعك
+        <input type="text" class="location" placeholder="أدخل موقعك هنا" />
+        <input type="number" class="phone" placeholder="أدخل رقم هاتفك هنا" />
+      </div>
+      <div class="cart-actions">
+        <strong id="cart-total">المجموع: 0 ج</strong>
+        <div>
+          <button id="cart-clear" style="margin-right: 6px">تفريغ</button>
+          <button id="cart-checkout" class="btn-checkout">
+            إرسال عبر واتساب
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <button id="cart-toggle" title="عرض العربة">🛒</button>
+
+    <script src="main copy.js"></script>
+  </body>
+</html>
