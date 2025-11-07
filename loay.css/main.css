@@ -25,8 +25,10 @@ header {
 }
 
 strong {
-  font-weight: 700;
-  color: var(--accent);
+  color: #ffffff;
+  background-color: #7d6c6c85;
+  border-radius: 50%;
+  border: none;
 }
 .nav {
   max-width: 1100px;
@@ -212,7 +214,7 @@ h2 {
   position: fixed;
   left: 12px;
   bottom: 12px;
-  background: var(--accent);
+  background: #c0392b78;
   color: #fff;
   border: none;
   padding: 12px;

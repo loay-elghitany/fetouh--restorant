@@ -6,7 +6,7 @@ let cartOfItems = document.querySelector("#cart");
 let cartCheckOut = document.querySelector("#cart-checkout");
 let cartToggle = document.querySelector("#cart-toggle");
 let cart = [];
-let PHONE = "201555172765"; 
+let PHONE = "201004708818"; 
 
 addBtn.forEach((button) => {
     button.addEventListener("click", () => {
