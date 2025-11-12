@@ -343,6 +343,7 @@ h2 {
 }
 
 .side-extras {
+  display: none;
   position: fixed;
   right: 0;
   top: 100px;
