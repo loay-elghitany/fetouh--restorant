@@ -5,18 +5,38 @@ let clearCartBtn = document.querySelector("#cart-clear");
 let cartOfItems = document.querySelector("#cart");
 let cartCheckOut = document.querySelector("#cart-checkout");
 let cartToggle = document.querySelector("#cart-toggle");
+let extraIcon = document.querySelector(".extra-icon");
+let sidextras = document.querySelector(".side-extras");
 let cart = [];
 let PHONE = "201004708818"; 
 
 addBtn.forEach((button) => {
     button.addEventListener("click", () => {
-        let product = {
-            id: button.dataset.id,
-            name: button.dataset.name,
-            price: button.dataset.price
-            // لا تضيف qty هنا لأن addOrIncrement يتعامل مع الكمية
-        };
-        addOrIncrement(product);
+        const productId = button.dataset.id;
+        const sizeSelect = document.querySelector(`select[data-id="${productId}"]`);
+
+        // إذا وُجد select (أي المنتج يدعم أحجام) استخدم الخيار المحدد، وإلا اعتمد على بيانات الزر (fallback)
+        if (sizeSelect) {
+            const selectedOption = sizeSelect.options[sizeSelect.selectedIndex];
+            let product = {
+                id: `${productId}-${sizeSelect.value}`,
+                name: `${sizeSelect.dataset.name} (${selectedOption.text.split(' - ')[0]})`,
+                price: selectedOption.dataset.price,
+                size: sizeSelect.value
+            };
+            addOrIncrement(product);
+        } else {
+            // fallback: بعض العناصر قد لا تحتوي على select (أقسام لم تُحدّث بعد)
+            const name = button.dataset.name || button.getAttribute('data-name') || button.textContent.trim() || 'منتج';
+            const price = button.dataset.price || button.getAttribute('data-price') || 0;
+            let product = {
+                id: productId,
+                name: name,
+                price: price,
+                size: null
+            };
+            addOrIncrement(product);
+        }
     });
 });
 
@@ -51,14 +71,14 @@ function renderCart() {
                        <button data-i="${item.id}" class="cart-remove" style="margin-top:6px;display:block">حذف</button>
                      </div>`;
         cartItems.appendChild(itemDiv);
-        total += item.price * item.qty;
+        total += Number(item.price) * item.qty;
     });
     cartTotal.textContent = `المجموع: ${total} ج`;
-    if (cart.length === 0) {
-        cartOfItems.style.display = "none";
-    } else if (cart.length > 0) {
-        cartOfItems.style.display = "block";
-    }
+    // if (cart.length === 0) {
+    //     cartOfItems.style.display = "none";
+    // } else if (cart.length > 0) {
+    //     cartOfItems.style.display = "block";
+    // }
 attachCartButtons() 
 }
 function attachCartButtons() {
@@ -121,5 +141,12 @@ cartToggle.addEventListener("click", () => {
         cartOfItems.style.display = "none";
     } else {
         cartOfItems.style.display = "block";
+    }
+});
+extraIcon.addEventListener("click", () => {
+    if (sidextras.style.display === "block") {
+        sidextras.style.display = "none";
+    } else {
+        sidextras.style.display = "block";
     }
 });
