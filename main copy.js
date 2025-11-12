@@ -150,3 +150,7 @@ extraIcon.addEventListener("click", () => {
         sidextras.style.display = "block";
     }
 });
+window.onload = () => {
+    cartOfItems.style.display = "none";
+    sidextras.style.display = "none";
+}
